@@ -18,7 +18,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "5652824975:AAFRr_eoGmmxLlyWhmpdsq5xkQFE
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS", "1632597748").split(",")] if os.environ.get("ADMINS") else []
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
-DATABASE_URL = os.environ.get("DATABASE_URL", mongodb+srv://SkMedia:Tharunraj1828@cluster0.vbdxs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority) # mongodb uri from https://www.mongodb.com/
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://SkMedia:Tharunraj1828@cluster0.vbdxs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority") # mongodb uri from https://www.mongodb.com/
 OWNER_ID =  int(os.environ.get("OWNER_ID", "1632597748")) # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
